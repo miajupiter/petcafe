@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  api:
+    container_name: tourabi-api
+    build: .
+    ports:
+      - 8512:8502
+    environment:
+      HTTP_PORT: 8502
